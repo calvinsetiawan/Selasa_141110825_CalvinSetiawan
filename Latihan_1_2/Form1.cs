@@ -18,24 +18,6 @@ namespace Latihan_1_2
             InitializeComponent();
         }
 
-       
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void vScrollBar(object sender, ScrollEventArgs e)
-        {
-
-        }
-
         private void vScrollBar1_scroll(object sender, ScrollEventArgs e)
         {
             DateTime now = DateTime.Now;
@@ -43,7 +25,7 @@ namespace Latihan_1_2
             if (vScrollBar2.Value > vScrollBar1.Value)
             {
                 vScrollBar1.Value = vScrollBar2.Value;
-                
+
             }
             dateTimePicker1.MaxDate = now.AddYears(vScrollBar1.Value - vScrollBar1.Maximum).Date;
             dateTimePicker1.MinDate = now.AddYears(vScrollBar2.Value - vScrollBar2.Maximum).Date;
@@ -61,11 +43,9 @@ namespace Latihan_1_2
             dateTimePicker1.MinDate = now.AddYears(vScrollBar2.Value - vScrollBar2.Maximum).Date;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
-          
-        }
 
-        
+        }
     }
 }

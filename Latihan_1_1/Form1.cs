@@ -17,7 +17,7 @@ namespace Latihan_1_1
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void tabControl1_ImeModeChanged(object sender, EventArgs e)
         {
 
         }

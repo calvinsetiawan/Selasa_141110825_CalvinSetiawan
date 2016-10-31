@@ -38,8 +38,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.fontsize = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.font = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.fontfamily = new System.Windows.Forms.ToolStripComboBox();
             this.color = new System.Windows.Forms.ToolStripButton();
             this.richtxt = new System.Windows.Forms.RichTextBox();
             this.toolStrip1.SuspendLayout();
@@ -56,8 +55,7 @@
             this.toolStripSeparator3,
             this.fontsize,
             this.toolStripSeparator4,
-            this.font,
-            this.toolStripSeparator5,
+            this.fontfamily,
             this.color});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -72,7 +70,7 @@
             this.bold.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bold.Name = "bold";
             this.bold.Size = new System.Drawing.Size(23, 22);
-            this.bold.Text = "B";
+            this.bold.Text = "toolStripButton1";
             this.bold.Click += new System.EventHandler(this.bold_Click);
             // 
             // toolStripSeparator1
@@ -87,7 +85,8 @@
             this.italic.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.italic.Name = "italic";
             this.italic.Size = new System.Drawing.Size(23, 22);
-            this.italic.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.italic.Text = "toolStripButton2";
+            this.italic.Click += new System.EventHandler(this.italic_Click);
             // 
             // toolStripSeparator2
             // 
@@ -101,6 +100,7 @@
             this.underline.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.underline.Name = "underline";
             this.underline.Size = new System.Drawing.Size(23, 22);
+            this.underline.Text = "toolStripButton3";
             this.underline.Click += new System.EventHandler(this.underline_Click);
             // 
             // toolStripSeparator3
@@ -111,28 +111,27 @@
             // fontsize
             // 
             this.fontsize.Items.AddRange(new object[] {
-            ""});
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "36"});
             this.fontsize.Name = "fontsize";
             this.fontsize.Size = new System.Drawing.Size(121, 25);
             this.fontsize.SelectedIndexChanged += new System.EventHandler(this.fontsize_SelectedIndexChanged);
-            this.fontsize.Click += new System.EventHandler(this.fontsize_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
-            // font
+            // fontfamily
             // 
-            this.font.Name = "font";
-            this.font.Size = new System.Drawing.Size(121, 25);
-            this.font.SelectedIndexChanged += new System.EventHandler(this.font_SelectedIndexChanged);
-            this.font.Click += new System.EventHandler(this.font_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.fontfamily.Name = "fontfamily";
+            this.fontfamily.Size = new System.Drawing.Size(121, 25);
+            this.fontfamily.SelectedIndexChanged += new System.EventHandler(this.fontfamily_SelectedIndexChanged);
             // 
             // color
             // 
@@ -141,14 +140,14 @@
             this.color.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.color.Name = "color";
             this.color.Size = new System.Drawing.Size(23, 22);
-            this.color.Text = "toolStripButton3";
+            this.color.Text = "toolStripButton4";
             this.color.Click += new System.EventHandler(this.color_Click);
             // 
             // richtxt
             // 
-            this.richtxt.Location = new System.Drawing.Point(12, 28);
+            this.richtxt.Location = new System.Drawing.Point(0, 28);
             this.richtxt.Name = "richtxt";
-            this.richtxt.Size = new System.Drawing.Size(397, 345);
+            this.richtxt.Size = new System.Drawing.Size(468, 362);
             this.richtxt.TabIndex = 1;
             this.richtxt.Text = "";
             // 
@@ -156,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 385);
+            this.ClientSize = new System.Drawing.Size(515, 420);
             this.Controls.Add(this.richtxt);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
@@ -180,8 +179,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripComboBox fontsize;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripComboBox font;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripComboBox fontfamily;
         private System.Windows.Forms.ToolStripButton color;
         private System.Windows.Forms.RichTextBox richtxt;
     }

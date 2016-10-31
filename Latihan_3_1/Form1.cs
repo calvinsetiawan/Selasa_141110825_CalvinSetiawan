@@ -20,7 +20,7 @@ namespace Latihan_3_1
         private void bold_Click(object sender, EventArgs e)
         {
             Font fontlama, fontbaru;
-            
+
             fontlama = richtxt.SelectionFont;
             if (fontlama.Bold)
             {
@@ -35,7 +35,7 @@ namespace Latihan_3_1
             richtxt.SelectionFont = fontbaru;
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void italic_Click(object sender, EventArgs e)
         {
             Font fontlama, fontbaru;
             fontlama = richtxt.SelectionFont;
@@ -69,40 +69,24 @@ namespace Latihan_3_1
             richtxt.SelectionFont = fontbaru;
         }
 
-        private void fontsize_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void font_Click(object sender, EventArgs e)
-        {
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach(FontFamily tulisan in FontFamily.Families)
+            foreach (FontFamily tulisan in FontFamily.Families)
             {
-               font.Items.Add(tulisan.Name.ToString());
+                fontfamily.Items.Add(tulisan.Name.ToString());
             }
-            for (int i = 8; i <= 72; i += 2)
-            {
-                fontsize.Items.Add(i);
-            }
-
             fontsize.SelectedIndex = 2;
-            font.Text = "Times New Roman";
+            fontfamily.Text = "Times New Roman";
         }
 
         private void fontsize_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richtxt.Font = new Font(font.Font.FontFamily, float.Parse(fontsize.SelectedItem.ToString()));
-
+            richtxt.Font = new Font(fontfamily.Font.FontFamily, float.Parse(fontsize.SelectedItem.ToString()));
         }
 
-        private void font_SelectedIndexChanged(object sender, EventArgs e)
+        private void fontfamily_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richtxt.Font = new Font(font.SelectedItem.ToString(), richtxt.Font.Size);
-
+            richtxt.Font = new Font(fontfamily.SelectedItem.ToString(), richtxt.Font.Size);
         }
 
         private void color_Click(object sender, EventArgs e)

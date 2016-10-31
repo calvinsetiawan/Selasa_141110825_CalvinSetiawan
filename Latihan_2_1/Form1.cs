@@ -17,16 +17,6 @@ namespace Latihan_2_1
             InitializeComponent();
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int tanggal = Convert.ToInt32(numericUpDown1.Value);
@@ -36,16 +26,11 @@ namespace Latihan_2_1
             monthCalendar1.UpdateBoldedDates();
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            monthCalendar1.ScrollChange = 4;
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             DateTime awal = new DateTime(2016, 1, 1);
             DateTime akhir = new DateTime(2016, 12, 31);
+            monthCalendar1.AddAnnuallyBoldedDate(new DateTime(1996, 9, 2));
             for (int i = 0; i < akhir.DayOfYear; i++)
             {
                 if (awal.DayOfWeek.ToString() == "Saturday" || awal.DayOfWeek.ToString() == "Sunday")
