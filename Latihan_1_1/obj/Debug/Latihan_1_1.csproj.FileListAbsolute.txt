@@ -7,3 +7,6 @@ C:\Users\User\Desktop\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Lati
 C:\Users\User\Desktop\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Latihan_1_1.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Latihan_1_1.exe
 C:\Users\User\Desktop\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Latihan_1_1.pdb
+E:\Selasa_141110825_CalvinSetiawan\Latihan_1_1\bin\Debug\Latihan_1_1.exe.config
+E:\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Latihan_1_1.exe
+E:\Selasa_141110825_CalvinSetiawan\Latihan_1_1\obj\Debug\Latihan_1_1.pdb
